@@ -25,6 +25,6 @@ Este repositorio contiene la solución al taller práctico de SQL para la tienda
 * **Cálculo de Edad**: Para los ejercicios que requieren segmentación demográfica, se utiliza la diferencia entre la fecha actual y la fecha de nacimiento.
 
 ---
-**Autor**: Sebastian
+**Autor**: Juan Sebastian Ibarra Hormaza
 **Contacto**: ibarrahormaza18@gmail.com
 **Asunto**: Taller 1 - Tecnologías y herramientas de almacenamiento y procesamiento de datos masivos
