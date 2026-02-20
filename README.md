@@ -4,7 +4,8 @@ Este repositorio contiene la solución al taller práctico de SQL para la tienda
 
 ## Herramientas Utilizadas
 * **Visual Studio Code**: Entorno de desarrollo para la escritura y organización de los scripts.
-* **SQLite Viewer**: Extensión utilizada para la ejecución, validación y visualización de resultados sobre el archivo tienda.db.
+* **SQLite**: Motor de base de datos utilizado para la gestión de datos y ejecución de consultas (queries).
+* **SQLite Viewer**: Extensión de VS Code empleada para visualizar las tablas de la base de datos y validar los resultados de forma gráfica.
 * **Git y GitHub**: Herramientas para el control de versiones y la gestión del entregable en un repositorio público.
 
 ## Estructura del Repositorio
@@ -14,7 +15,7 @@ Este repositorio contiene la solución al taller práctico de SQL para la tienda
 
 ## Instrucciones de Ejecución
 1. Abrir la carpeta del proyecto en Visual Studio Code.
-2. Asegurarse de tener instalada la extensión SQLite Viewer.
+2. Asegurarse de tener instalada la extensión SQLite Viewer y SQLite.
 3. Abrir el archivo de la base de datos `tienda.db`.
 4. Abrir el archivo `.sql` correspondiente al ejercicio que desea consultar.
 5. Seleccionar el código SQL con el cursos, hacer clic derecho y elegir la opción "Run Query".
