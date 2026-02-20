@@ -29,4 +29,3 @@ Este repositorio contiene la solución al taller práctico de SQL para la tienda
 **Autor**: Juan Sebastian Ibarra Hormaza
 **Contacto**: ibarrahormaza18@gmail.com
 **Asunto**: Taller 1 - Infraestructura para el análisis de grandes conjuntos de datos
-
