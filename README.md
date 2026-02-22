@@ -1,31 +1,52 @@
-# Taller SQL: El Último Salto
+Taller SQL: El Último Salto 
+Este repositorio contiene la solución integral al taller práctico de SQL para la tienda "El Último Salto", ubicada en Pasto, Nariño. El proyecto utiliza una base de datos con más de 1,000 transacciones para generar reportes de inteligencia de negocios y comportamiento del consumidor.
 
-Este repositorio contiene la solución al taller práctico de SQL para la tienda "El Último Salto", especializada en paracaidismo y deportes extremos en Pasto, Nariño. El objetivo del proyecto es analizar una base de datos normalizada con más de 1,000 transacciones para extraer métricas de negocio y comportamiento de clientes.
+Herramientas y Requisitos
+Para visualizar y ejecutar este proyecto, es necesario contar con:
 
-## Herramientas Utilizadas
-* **Visual Studio Code**: Entorno de desarrollo principal para la escritura y organización de los scripts .sql.
-* **SQLite**: Motor de base de datos utilizado para la gestión de datos y ejecución de consultas (queries).
-* **SQLite Viewer**: Extensión de VS Code empleada para visualizar las tablas de la base de datos y validar los resultados de forma gráfica.
-* **Git y GitHub**: Herramientas para el control de versiones y la gestión del entregable en un repositorio público.
+Visual Studio Code: Como editor de texto principal.
 
-## Estructura del Repositorio
-* **Ejercicios**: Cada solución se encuentra en la carpeta `sql/` en su respectivo archivo siguiendo el formato `XX_ejercicio.sql`.
-* **Base de Datos**: Las consultas están diseñadas para ser ejecutadas directamente contra el archivo `tienda.db`.
-* **Documentación**: Se han incluido comentarios explicativos en el código para detallar la lógica en soluciones complejas.
+Extensiones de VS Code (Instalación obligatoria):
 
-## Instrucciones de Ejecución
-1. Abrir la carpeta del proyecto en Visual Studio Code.
-2. Asegurarse de tener instaladas las extensiones **SQLite Viewer** y **SQLite**.
-3. Abrir el archivo de la base de datos `tienda.db`.
-4. Abrir el archivo `.sql` correspondiente al ejercicio que desea consultar.
-5. Seleccionar el código SQL con el cursor, hacer clic derecho y elegir la opción **"Run Query"**.
+SQLite (de alexcvzz): Para ejecutar las consultas y conectarse a la base de datos.
 
-## Supuestos y Consideraciones
-* **Cupón ULTIMO_SUSPIRO**: Se aplica un descuento del 30% sobre el precio original, válido únicamente para clientes mayores de 60 años ("saltadores de oro").
-* **Criterios Temporales**: Los análisis realizados para el año 2025 se filtran mediante la columna `fecha_venta`.
-* **Cálculo de Edad**: Para los ejercicios demográficos, se utiliza la función `strftime` para calcular la edad actual basándose en la `fecha_nacimiento`.
+SQLite Viewer (de qwtel): Para visualizar las tablas de forma gráfica.
 
----
-**Autor**: Juan Sebastian Ibarra Hormaza
-**Contacto**: ibarrahormaza18@gmail.com
-**Asunto**: Taller 1 - Infraestructura para el análisis de grandes conjuntos de datos
+Guía de Ejecución (Paso a Paso)
+Sigue estas instrucciones para correr los scripts correctamente:
+
+Abrir el Proyecto: Abre la carpeta raíz en Visual Studio Code.
+
+Ver la Base de Datos: Haz clic en el archivo tienda.db. Se abrirá una pestaña con el visor de tablas.
+
+Preparar la Consulta: Abre cualquier archivo .sql de la carpeta de ejercicios.
+
+Ejecutar el Código:
+
+Usa el cursor para seleccionar todo el bloque de código que deseas ejecutar.
+
+Opción A: Haz clic derecho sobre el texto seleccionado y elige "Run Query".
+
+Opción B: Presiona el atajo de teclado Ctrl + Shift + Q.
+
+Vincular la Base de Datos: En la parte superior de VS Code se abrirá una lista desplegable; debes seleccionar el archivo tienda.db para que la consulta se ejecute sobre los datos del taller.
+
+Reglas de Negocio y Supuestos
+Cupón ULTIMO_SUSPIRO: Aplica un 30% de descuento. El análisis incluye proyecciones de ingresos brutos vs. ingresos con descuento.
+
+Segmentación Demográfica: Las edades se calculan dinámicamente comparando el año actual con la columna fecha_nacimiento.
+
+Estado de Riesgo: Se considera "cliente de riesgo" a aquel que no ha realizado compras en los últimos 180 días.
+
+Estructura del Repositorio
+sql/: Contiene los archivos .sql con las soluciones comentadas.
+
+tienda.db: Base de datos SQLite normalizada.
+
+README.md: Documentación y manual de uso.
+
+Autor: Juan Sebastian Ibarra Hormaza
+
+Contacto: ibarrahormaza18@gmail.com
+
+Asunto: Taller 1 - Infraestructura para el análisis de grandes conjuntos de datos
